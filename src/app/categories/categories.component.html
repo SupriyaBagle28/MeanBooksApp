@@ -1,0 +1,24 @@
+<h3>Please Select the Category!!</h3>
+
+<button mat-button [matMenuTriggerFor]="category" class="Category">Categories</button>
+<mat-menu #category="matMenu">
+    <button mat-menu-item (click)="onSelect('Crime')">Crime</button>
+    <button mat-menu-item (click)="onSelect('Adventure')">Adventure</button>
+</mat-menu>
+
+<hr>
+
+<div class="body">
+    <div *ngFor="let book of data">
+        <mat-card class="categoriesList">
+
+            <mat-card-header>
+                <mat-card-title> {{book.name}}</mat-card-title><br>
+                <mat-card-subtitle>Price :{{book.price}}</mat-card-subtitle> <br>
+            </mat-card-header>
+
+            <button class="btn btn-primary" (click)="addToCart(book)">AddToCart</button><br>
+
+        </mat-card>
+    </div>
+</div>

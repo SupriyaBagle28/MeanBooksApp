@@ -1,0 +1,20 @@
+.navbar {
+    background-color: grey;
+    color: white;
+}
+
+.navbar-nav {
+    padding-left: 800px;
+}
+
+.NavBar {
+    padding-top: 15px;
+}
+
+.navbar-header {
+    padding-top: 8px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
