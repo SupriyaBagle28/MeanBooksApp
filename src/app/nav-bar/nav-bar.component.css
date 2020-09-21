@@ -4,11 +4,8 @@
 }
 
 .navbar-nav {
-    padding-left: 800px;
-}
-
-.NavBar {
-    padding-top: 15px;
+    /* padding-left: 800px; */
+    float: right;
 }
 
 .navbar-header {
